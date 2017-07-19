@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Lato-Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Lato-Thin/Lato-Thin.eot?#iefix") format("embedded-opentype"),
+  		url("../fonts/Lato-Thin/Lato-Thin.woff") format("woff"), 
+  		url("../fonts/Lato-Thin/Lato-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font-Awesome";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Font-Awesome/Font-Awesome.eot?#iefix") format("embedded-opentype"),
+  		url("../fonts/Font-Awesome/Font-Awesome.woff") format("woff"), 
+  		url("../fonts/Font-Awesome/Font-Awesome.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Lato-Semibold/Lato-Semibold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Lato-Semibold/Lato-Semibold.woff") format("woff"), 
+      url("../fonts/Lato-Semibold/Lato-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Lato-Regular/Lato-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Lato-Regular/Lato-Regular.woff") format("woff"), 
+      url("../fonts/Lato-Regular/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GreatVibes-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GreatVibes-Regular/GreatVibes-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/GreatVibes-Regular/GreatVibes-Regular.woff") format("woff"), 
+      url("../fonts/GreatVibes-Regular/GreatVibes-Regular.ttf") format("truetype");
+}
