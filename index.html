@@ -4,13 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tatto Studio</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="css/jquery.bxslider.css" rel="stylesheet">
+	<link href="css/lightbox.css" rel="stylesheet">
 	<script src="https://use.fontawesome.com/6440772051.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/lightbox.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -21,7 +24,7 @@
 					<h3>Tel: 0800 000 000</h3>
 				</div>
 				<div class="col-md-4 logo">
-					<h1>Tattoo<br>Studio</h1>
+					<h1><a href="#">Tattoo<br>Studio</a></h1>
 				</div>
 				<div class="col-md-4 f_icon">
 					<a href="#social"><img src="img/facebook_icon.png" alt="facebook_icon"></a>
@@ -74,7 +77,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="artists" id="artists">
 		<div class="container">
 			<div class="row">
@@ -123,24 +125,39 @@
 			</div>
 			<div class="row works">
 				<div class="col-md-3">
-					<img src="img/Tattoo_1.jpg" alt="tattoo">
-					<img src="img/Tattoo_7.jpg" alt="tattoo">
+					<a href="img/Tattoo_1.jpg" data-lightbox="roadtrip">
+						<img src="img/Tattoo_1.jpg" alt="tattoo">
+					</a>
+					<a href="img/Tattoo_7.jpg" data-lightbox="roadtrip">
+						<img src="img/Tattoo_7.jpg" alt="tattoo">
+					</a>
 				</div>
 				<div class="col-md-3">
-					<img src="img/Tattoo_2.jpg" alt="tattoo">
-					<img src="img/Tattoo_6.jpg" alt="tattoo">
+					<a href="img/Tattoo_2.jpg" data-lightbox="roadtrip">
+						<img src="img/Tattoo_2.jpg" alt="tattoo">
+					</a>
+					<a href="img/Tattoo_6.jpg" data-lightbox="roadtrip">
+						<img src="img/Tattoo_6.jpg" alt="tattoo">
+					</a>
 				</div>
 				<div class="col-md-3">
-					<img src="img/Tattoo_3.jpg" alt="tattoo">
-					<img src="img/Tattoo_5.jpg" alt="tattoo">
+					<a href="img/Tattoo_3.jpg" data-lightbox="roadtrip">
+						<img src="img/Tattoo_3.jpg" alt="tattoo">
+					</a>
+					<a href="img/Tattoo_5.jpg" data-lightbox="roadtrip">
+						<img src="img/Tattoo_5.jpg" alt="tattoo">
+					</a>
 				</div>
 				<div class="col-md-3">
-					<img src="img/Tattoo_4.jpg" alt="tattoo">
-					<img src="img/Tattoo_8.jpg" alt="tattoo">
+					<a href="img/Tattoo_4.jpg" data-lightbox="roadtrip">
+						<img src="img/Tattoo_4.jpg" alt="tattoo">
+					</a>
+					<a href="img/Tattoo_8.jpg" data-lightbox="roadtrip">
+						<img src="img/Tattoo_8.jpg" alt="tattoo">
+					</a>
 				</div>
-
 			</div>
-		</div>
+		</div>	
 	</section>
 	<section class="blog" id="blog">
 		<div class="container">
@@ -149,20 +166,48 @@
 				<h3>News, Tips & Shiz!</h3>
 			</div>
 			<div class="row articles">
-				<div class="col-md-4">
-					<<img class="img-responsive" src="img/work1.jpg" alt="article">
+				<div class="col-md-4 article">
+					<img class="img-responsive" src="img/work1.jpg" alt="article">
+					<h4>Lorem ipsum dolor sit amet, conlecer</h4> 
+					<div class="article_description">
+						<h5>Nulla erat tortor, rhoncus a dolor</h5>
+						<h6>Morbi semper viverra nibh vel finibus n hac habitasse platea dictumst. Donec eleifend eros id facilisis eras auctor, pellentesque et massa vel odio congue...</h6>
+						<a href="#">Read Post</a>
+						<div class="about_article">
+							<p>27 July</p>
+							<p>by Stevie Ipsum </p>
+							<p>125 comments</p>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-4">
-					<<img class="img-responsive" src="img/work4.jpg" alt="article">
+				<div class="col-md-4 article">
+					<img class="img-responsive" src="img/work4.jpg" alt="article">
+					<h4>Lorem ipsum dolor sit amet, conlecer</h4>
+					<div class="article_description">
+						<h5>Nulla erat tortor, rhoncus a dolor</h5>
+						<h6>Morbi semper viverra nibh vel finibus n hac habitasse platea dictumst. Donec eleifend eros id facilisis eras auctor, pellentesque et massa vel odio congue...</h6>
+						<a href="#">Read Post</a>
+						<div class="about_article">
+							<p>27 July</p>
+							<p>by Stevie Ipsum </p>
+							<p>125 comments</p>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-4">
-					<<img class="img-responsive" src="img/work3.jpg" alt="article">
-				</div>
-				
-
-			</div>
-			<div>
-				
+				<div class="col-md-4 article">
+					<img class="img-responsive" src="img/work3.jpg" alt="article">
+					<h4>Lorem ipsum dolor sit amet, conlecer</h4>
+					<div class="article_description">
+						<h5>Nulla erat tortor, rhoncus a dolor</h5>
+						<h6>Morbi semper viverra nibh vel finibus n hac habitasse platea dictumst. Donec eleifend eros id facilisis eras auctor, pellentesque et massa vel odio congue...</h6>
+						<a href="#">Read Post</a>
+						<div class="about_article">
+							<p>27 July</p>
+							<p>by Stevie Ipsum </p>
+							<p>125 comments</p>
+						</div>
+					</div>
+				</div>	
 			</div>
 		</div>
 	</section>
@@ -202,8 +247,8 @@
 				</div>
 			</div>
 		</div>
-	</footer>
-
+		<a class="scroll_to_top"><i class="fa fa-arrow-circle-up" aria-hidden="true""></i></a>		
+	</footer>	
 	<script src="js/main.js"></script>			
 </body>
 </html>

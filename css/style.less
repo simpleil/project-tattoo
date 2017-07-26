@@ -9,7 +9,7 @@ header {
   position: relative;
   background-color: #191919;
   color: #fff;
-  padding-top: 30px;
+  padding-top: 20px;
   z-index: 5;
   /* -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 0% 100%);
@@ -19,16 +19,20 @@ header {
       position: absolute;
       top: 50px;
       left: 0;
-      font-size: 24px;
+      font-size: 22px;
       font-family: "Lato-Regular";
     }
   }
   .logo {
     text-align: center;
     h1 {
-      font-size: 100px;
-      font-family: "GreatVibes-Regular";
-      line-height: 60px;
+      a {
+        font-size: 100px;
+        font-family: "GreatVibes-Regular";
+        line-height: 60px;
+        text-decoration: none;
+        color: #ffffff;
+      }
     }
   }
   .f_icon {
@@ -40,7 +44,7 @@ header {
 
   }
   .menu {
-    margin-top: 35px;
+    margin-top: 15px;
     text-align: center;
     ul {
       li {
@@ -340,30 +344,34 @@ header:after {
       margin-top: 40px;
       margin-bottom: 10px;
     }
-    h3 {
-      color: #191919;
-      font-family: "Lato-Thin";
-      font-size: 44px;
-      text-transform: uppercase;
-      margin: 0;
-      margin-bottom: 5px;
+  h3 {
+    color: #191919;
+    font-family: "Lato-Thin";
+    font-size: 44px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  p {
+    margin-top: 20px;
+    color: #888888;
+    font-family: "Lato-Regular";
+    font-size: 15px;
+    line-height: 22px;  
+    text-align: justify;
+  }
+  .works {
+    text-align: center;
+    img {
+      width: 265px;
+      margin-bottom: 30px;
+    &:hover {
+      cursor: zoom-in;
     }
-    p {
-      margin-top: 20px;
-      color: #888888;
-      font-family: "Lato-Regular";
-      font-size: 15px;
-      line-height: 22px;  
-      text-align: justify;
     }
-    .works {
-      text-align: center;
-      img {
-        width: 265px;
-        margin-bottom: 30px;
-      }
-    }
+  }
 }
+  
 
 .blog {
   background-color: #191919;
@@ -390,6 +398,77 @@ header:after {
   }
   .articles {
     margin-bottom: 30px;
+    .article {
+      position: relative;
+      h4 {
+        text-transform: uppercase;
+        width: 92.5%;
+        font-family: "Lato-Regular";
+        font-size: 16px;
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        right: 15px;
+        margin: 0;
+        color: #dfdfdf;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+      }
+      .article_description {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        border: 0;
+        left: 15px;
+        right: 15px;
+        bottom: 0;
+        height: 0;
+        color: #dfdfdf;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 0px 10px 10px 10px;
+        transition: all 1.5s;
+        h5 {
+          padding-top: 25px;
+          text-transform: uppercase;
+          font-family: "Lato-Regular";
+          font-size: 16px;
+        }
+        h6 {
+          font-family: "Lato-Thin";
+          font-size: 14px;
+          line-height: 22px; 
+        }
+        a {
+          background-color: #888888;
+          text-transform: uppercase;
+          font-size: 13px;
+          padding: 10px;
+          border: none;
+          text-decoration: none;
+          color: #dfdfdf;
+          transition: all 0.5s;
+          &:hover {
+            border: .5px solid #f84502;
+            background-color: #191919;
+          }
+        }
+        .about_article {
+          margin-top: 10px;
+          p {
+            display: inline-block;
+            text-transform: uppercase;
+            font-family: "Lato-Regular";
+            font-size: 13px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-right: 1px solid #dfdfdf;
+          }
+          p:last-child {
+            border: none;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -511,6 +590,27 @@ footer {
   }
   .social_facebook {
     text-align: right;
+  }
+  .scroll_to_top{
+    text-decoration: none;
+    position:fixed;
+    bottom: 115px;
+    right: 35px;
+    z-index: 11;
+    border: none;
+    background: none;
+    display:none;
+    opacity: 0.7;
+    .fa-arrow-circle-up {
+      color: #f84502;
+      font-size: 35px;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .scroll_to_top:hover{
+    text-decoration:none;
   }
 }
 footer:before {
