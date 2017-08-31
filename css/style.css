@@ -4,15 +4,98 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+.dropDownMenu {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 300;
+  padding-top: 10%;
+}
+.dropDownMenu .cancel {
+  text-align: right;
+  padding: 15px 30px 0;
+}
+.dropDownMenu .cancel a {
+  font-size: 24px;
+  font-family: "Lato-Regular";
+  text-decoration: none;
+  color: #ffffff;
+}
+.dropDownMenu ul {
+  padding: 0;
+  text-align: center;
+}
+.dropDownMenu ul li {
+  display: block;
+}
+.dropDownMenu ul li a {
+  display: block;
+  padding: 10px 0;
+  font-size: 18px ;
+  font-family: "Lato-Regular";
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.dropDownMenu ul li a:hover {
+  background: #f84502;
+  color: #ffffff;
+}
 header {
   position: relative;
   background-color: #191919;
   color: #fff;
   padding-top: 20px;
-  z-index: 5;
-  /* -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 0% 100%);
-   */
+  z-index: 1000;
+}
+header .lineMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 0.5px solid #ffffff;
+}
+header .lineMenu .tattooStudio {
+  padding: 10px 15px;
+}
+header .lineMenu .tattooStudio a {
+  float: left;
+  color: #ffffff;
+  font-size: 35px;
+  font-family: "GreatVibes-Regular";
+  line-height: 20px;
+  margin: 10px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+header .lineMenu .tattooStudio p {
+  padding-top: 15px;
+  font-family: "Lato-Regular";
+}
+header .lineMenu .burger {
+  position: absolute;
+  top: 15px;
+  right: 5%;
+}
+header .lineMenu .burger .burgerIcon {
+  border: 1px solid #ffffff;
+  display: inline-block;
+  padding: 0 7px;
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s;
+  float: right;
+}
+header .lineMenu .burger .burgerIcon:hover {
+  text-decoration: none;
+  color: #f84502;
+  border-color: #f84502;
 }
 header .phone h3 {
   position: absolute;
@@ -36,6 +119,25 @@ header .f_icon img {
   top: 50px;
   right: 0;
 }
+header .iconMenu {
+  padding-top: 15px;
+  display: none;
+}
+header .iconMenu .icon {
+  border: 1px solid #ffffff;
+  display: inline-block;
+  padding: 0 7px;
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  float: right;
+  transition: all 0.5s;
+}
+header .iconMenu .icon:hover {
+  text-decoration: none;
+  color: #f84502;
+  border-color: #f84502;
+}
 header .menu {
   margin-top: 15px;
   text-align: center;
@@ -54,24 +156,6 @@ header .menu ul li a {
 }
 header .menu ul li a:hover {
   color: #c7c6c6;
-}
-header:after {
-  background: inherit;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 50%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
-  transform: skewY(-3deg);
-  -webkit-transform-origin: 100%;
-  -moz-transform-origin: 100%;
-  -ms-transform-origin: 100%;
-  z-index: -1;
 }
 .foto_slider {
   z-index: -2;
@@ -244,7 +328,7 @@ header:after {
   font-size: 40px;
 }
 .testimonials p {
-  color: ##888888;
+  color: #888888;
   font-family: "Lato-Thin";
   font-size: 15px;
   margin-bottom: 5px;
@@ -259,7 +343,7 @@ header:after {
   background-color: #888888;
   position: absolute;
   bottom: -13%;
-  right: 8%;
+  right: 13%;
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.5s;
@@ -593,4 +677,123 @@ footer:before {
   -ms-transform-origin: 0;
   transform-origin: 0;
   z-index: -3;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  header .f_icon {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+  }
+  header .f_icon img {
+    height: 30px;
+    width: 30px;
+  }
+  header .phone {
+    left: 40px;
+  }
+  header .menu {
+    display: none;
+  }
+  .artists {
+    margin-top: 10px;
+  }
+  .contact {
+    margin-bottom: 0px;
+  }
+  .contact .contact_img img {
+    float: none;
+  }
+}
+@media only screen and (min-width: 578px) and (max-width: 991px) {
+  header .f_icon {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+  }
+  header .f_icon img {
+    height: 30px;
+    width: 30px;
+  }
+  header .phone h3 {
+    font-size: 16px;
+    left: 40px;
+  }
+  header .logo h1 a {
+    font-size: 60px;
+    line-height: 20px;
+  }
+  header .menu {
+    display: none;
+  }
+  .artists {
+    margin-top: 10px;
+  }
+  .contact {
+    margin-bottom: 0px;
+  }
+  .contact .contact_img img {
+    float: none;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .social_facebook {
+    text-align: center;
+  }
+  footer .rights p {
+    text-align: center !important;
+  }
+  footer .rights .creat_by {
+    padding-right: 10px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 577px) {
+  header .f_icon {
+    position: absolute;
+    top: -10%;
+    right: 10%;
+  }
+  header .f_icon img {
+    height: 30px;
+    width: 30px;
+  }
+  header .phone h3 {
+    font-size: 11px;
+    position: static;
+  }
+  header .logo h1 a {
+    font-size: 70px;
+    line-height: 20px;
+  }
+  header .menu {
+    display: none;
+  }
+  .foto_slider .bx-default-pager {
+    bottom: 20px !important;
+  }
+  .testimonials a {
+    bottom: -7%;
+    right: 20%;
+  }
+  .artists {
+    margin-top: -5px;
+  }
+  .contact {
+    margin-bottom: 0px;
+  }
+  .contact .contact_img img {
+    float: none;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .social_facebook {
+    text-align: center;
+  }
+  footer .rights p {
+    text-align: center !important;
+  }
+  footer .rights .creat_by {
+    padding-right: 10px;
+  }
 }

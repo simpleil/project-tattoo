@@ -31,8 +31,10 @@ $(document).ready(function(){
   $(window).scroll(function(){
     if ($(this).scrollTop() > 100) {
       $('.scroll_to_top').fadeIn();
+      $('.lineMenu').fadeIn();
     } else {
       $('.scroll_to_top').fadeOut();
+      $('.lineMenu').fadeOut();
     }
   });
   
@@ -49,7 +51,17 @@ $(document).ready(function(){
     $(this).find('.article_description').css(({'height': '0px', 'opacity': '0'}));
   });
 
+  $('.burger').click(function() {
+    $('.dropDownMenu').fadeIn();
+   });
 
+  $('.item').click(function() {
+   $('.dropDownMenu').fadeOut();
+  });
+
+  $('.cancel').click(function() {
+   $('.dropDownMenu').fadeOut();
+  });
 
 });
 

@@ -11,13 +11,35 @@
 	<link href="css/jquery.bxslider.css" rel="stylesheet">
 	<link href="css/lightbox.css" rel="stylesheet">
 	<script src="https://use.fontawesome.com/6440772051.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="js/jquery.bxslider.min.js"></script>
-	<script src="js/lightbox.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
 </head>
 <body>
 	<header id="home">
+		<div class="lineMenu">
+			<div class="container">
+				<div class="tattooStudio">
+					<a href="#">Tattoo<br>Studio</a>
+					<p>Tel: 0800 000 000</p>
+				</div>
+				<div class="burger">
+					<a href="javascript:void(0);" class="burgerIcon">&#9776;</a>
+				</div>
+			</div>
+			<div class="dropDownMenu">
+				<div class="cancel">
+					<a href="javascript:void(0);">&times;</a>
+				</div>
+				<ul>
+					<li class="item"><a href="#home">Home</a></li>
+					<li class="item"><a href="#about">About Us</a></li>
+					<li class="item"><a href="#artists">Artists</a></li>
+					<li class="item"><a href="#tertimolials">Testimonials</a></li>
+					<li class="item"><a href="#gallery">Gallery</a></li>
+					<li class="item"><a href="#blog">Blog</a></li>
+					<li class="item"><a href="#contact">Contact us</a></li>
+				</ul>
+			</div>
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 phone">
@@ -29,6 +51,9 @@
 				<div class="col-md-4 f_icon">
 					<a href="#social"><img src="img/facebook_icon.png" alt="facebook_icon"></a>
 				</div>
+			</div>
+			<div class="iconMenu">
+				<a href="javascript:void(0);" class="icon">&#9776;</a>
 			</div>
 			<div class="menu">
 				<ul>
@@ -80,7 +105,7 @@
 	<section class="artists" id="artists">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 tattoo_man">
 					<img class="img-responsive" src="img/celebrity.jpg" alt="artist">
 				</div>
 				<div class="col-md-6 celebrities">
@@ -214,7 +239,7 @@
 	<section class="contact" id="contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 contact_content">
+				<div class="col-md-6 col-sm-12 contact_content">
 					<h2>Contact Us</h2>
 					<h3>Drop in or holla!</h3>
 					<p>Malesuada penatibus felis aptent neque fringilla duis erast ridiculus, tristique massa. Elit hendrerit porttitor lorem dis rhoncus vulputate sociosqu gravida suscipit nisl volutpat.</p>
@@ -223,7 +248,7 @@
 					<p class="contact_info">Tel: 0800 000 000</p>
 					<p class="contact_info">holla@tattoostudio.com</p>
 				</div>
-				<div class="col-md-6 contact_img">
+				<div class="col-md-6 col-sm-12 contact_img">
 					<img class="img-responsive" src="img/open.jpg" alt="we are open">
 				</div>
 			</div>
@@ -233,22 +258,26 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2">
+				<div class="col-md-2 col-sm-12">
 					<a><h2>Tattoo<br>Studio</h2></a>
 				</div>
-				<div class="col-md-8 rights">
+				<div class="col-md-8 col-sm-12 rights">
 					<p>© 2015 Tattoo Studio (registered in England: 8000000). All Rights Reserved.</p>
 					<p class="creat_by">Designed by RobbyDesigns.com </p> 
 					<p class="creat_by">Development by LoremIpsum.com</p>
 					<p class="creat_by">Powered by Wordpress</p>
 				</div>
-				<div class="col-md-2 social_facebook">
+				<div class="col-md-2 col-sm-12 social_facebook">
 					<a href="#social"><img src="img/facebook_icon.png" alt="facebook_icon"></a>
 				</div>
 			</div>
 		</div>
 		<a class="scroll_to_top"><i class="fa fa-arrow-circle-up" aria-hidden="true""></i></a>		
 	</footer>	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/lightbox.js"></script>
 	<script src="js/main.js"></script>			
 </body>
 </html>
